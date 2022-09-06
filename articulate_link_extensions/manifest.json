@@ -1,0 +1,16 @@
+{
+    "name": "Articulate Rise: Sane Module Links",
+    "version": "1.0.0",
+    "description": "Creates actual links for Articulate modules",
+    "manifest_version": 3,
+    "author": "Niels Bom",
+    "content_scripts": [{
+        "matches": ["https://rise.articulate.com/"],
+        "js": ["content-script.js"],
+        "css": ["style.css"],
+        "run_at": "document_idle"
+    }],
+    "permissions": [
+        "activeTab"
+    ]
+}
